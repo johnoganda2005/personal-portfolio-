@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | John Oganda</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            margin: 5px 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #2980b9;
+            border-radius: 2px;
+        }
+
+        .edu-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 30px;
+        }
+
+        .edu-item::before {
+            content: '';
+            position: absolute;
+            left: -3px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #2980b9;
+            border-radius: 50%;
+        }
+
+        .edu-item h3 {
+            margin: 0;
+            color: #34495e;
+            font-size: 1.3rem;
+        }
+
+        .edu-item .year {
+            color: #7f8c8d;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .edu-item p {
+            margin: 5px 0 0 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Mobile responsiveness */
+        @media(max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 40px 15px;
+            }
+            .edu-item h3 {
+                font-size: 1.2rem;
+            }
+            .edu-item p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media(max-width: 480px) {
+            nav a {
+                margin: 8px 10px;
+                font-size: 0.9rem;
+            }
+            .edu-item h3 {
+                font-size: 1.1rem;
+            }
+            .edu-item p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+    </nav>
+
+    <div class="container">
+        <h1>Education</h1>
+
+        <div class="timeline">
+            <div class="edu-item">
+                <div class="year">2012 – 2019</div>
+                <h3>Primary Education at Ichuni Primary</h3>
+                <p>Total Marks: 320</p>
+            </div>
+
+            <div class="edu-item">
+                <div class="year">2020 – 2023</div>
+                <h3>High School at Cardinal Otunga</h3>
+                <p>Mean Grade: B+</p>
+            </div>
+
+            <div class="edu-item">
+                <div class="year">2024 – Present</div>
+                <h3>Chuka University</h3>
+                <p>Pursuing Bachelor of Science in Computer Science</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
