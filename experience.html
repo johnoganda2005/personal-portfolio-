@@ -75,4 +75,97 @@
 
         .exp-item::before {
             content: '';
-            posit
+            position: absolute;
+            left: -3px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #2980b9;
+            border-radius: 50%;
+        }
+
+        .exp-item h3 {
+            margin: 0;
+            color: #34495e;
+            font-size: 1.3rem;
+        }
+
+        .exp-item .year {
+            color: #7f8c8d;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .exp-item p {
+            margin: 5px 0 0 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Mobile responsiveness */
+        @media(max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 40px 15px;
+            }
+            .exp-item h3 {
+                font-size: 1.2rem;
+            }
+            .exp-item p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media(max-width: 480px) {
+            nav a {
+                margin: 8px 10px;
+                font-size: 0.9rem;
+            }
+            .exp-item h3 {
+                font-size: 1.1rem;
+            }
+            .exp-item p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+    </nav>
+
+    <div class="container">
+        <h1>Experience</h1>
+
+        <div class="timeline">
+            <div class="exp-item">
+                <div class="year">2023</div>
+                <h3>Internship at XYZ Tech Solutions</h3>
+                <p>
+                    Assisted in developing web applications using HTML, CSS, and JavaScript.
+                    Learned practical skills in team collaboration and project management.
+                </p>
+            </div>
+
+            <div class="exp-item">
+                <div class="year">2024 (Ongoing)</div>
+                <h3>Student Developer at University Projects</h3>
+                <p>
+                    Working on multiple personal and academic projects including website development,
+                    problem-solving challenges, and software applications.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
