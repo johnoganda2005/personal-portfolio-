@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - John's Life & Success Guide</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    header h2 {
+      font-size: 1.2em;
+      font-weight: normal;
+      margin: 10px 0;
+    }
+    header p {
+      font-style: italic;
+      margin-top: 10px;
+    }
+    nav {
+      background: #4a00e0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #8e2de2;
+      border-radius: 5px;
+    }
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #4a00e0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input,
+    textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #4a00e0;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #8e2de2;
+    }
+    .thank-you {
+      background-color: #e0ffe0;
+      padding: 20px;
+      margin-top: 20px;
+      border-left: 5px solid #4a00e0;
+      border-radius: 6px;
+      display: none;
+    }
+   nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px !important;
+      margin-right: 23px;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .nav-links li a:hover {
+      color: white;
+      transition: 0.5s;
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    
+      background-color: black;
+      margin: 4px 0;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    .logo{
+      color: aqua;
+    }
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    }
+    .menu-icon {
+        display: flex;
+        margin-right: 40px;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: lightblue;
+        margin-top: 10px;
+        padding: 10px 0;
+
+      }
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+        
+      }
+    footer {
+      text-align: center;
+      background: #4a00e0;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    h2{
+      font-size: 34px;
+      color: mediumblue;
+      margin-top: 20px;
+      text-align: center;
+    }
+    div{
+      border: 1px solid black;
+      margin-top: 20px;
+      padding: 5px;
+
+    }
+    
+  
+  img{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    margin-bottom: 2px;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John's Life & Success Guide</h1>
+    <h2>By John Oganda</h2>
+    <p>
+      Every great journey starts with a small, honest step.<br />
+      Focus on growth, not approval.<br />
+      Be disciplined today to enjoy freedom tomorrow.
+    </p>
+  </header>
+
+   <nav>
+      <span class="logo">Real Talk With John</span>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="life.html">Life Guide</a></li>
+    <li><a href="quote.html">Quote</a></li>
+    <li><a href="check.html">Checklist</a></li>
+    <li><a href="mindset.html">Mindset</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="risk.html">Risk Taking</a></li>
+    <li><a href="goals.html">Goals</a></li>
+    <li><a href="mental.html">Mental Health</a></li>
+    <li><a href="books.html">Books to Read</a></li>
+    <li><a href="career.html">Career</a></li>
+    <li><a href="Leadership.html">Leadership</a></li>
+    <li><a href="feed.html">Feedback</a></li>
+    <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <main>
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/johnoganda75@gmail.com" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    
+<div>
+  <p>Feel free to talk to me or just saying "HI".</p>
+  <p><strong>Address:</strong>+254748900182</p>
+  <p>Email me: <a href="mailto:johnoganda75@gmail.com">johnoganda75@gmail.com</a></p>
+  <p>
+    <a href="https://wa.me/+254748900182" target="_blank"><img src="wa.jpg" alt="whatsapp"> </a>
+      <a href="https://www.instagram.com/_inst.a_k.i.n.g_" target="_blank"><img src="ig.jpg" alt="ig"></a>
+      <a href="https://twitter.com/heyitsjohn94501" target="_blank"><img src="x.jpg" alt="x"></a>
+  </p>
+</div>
+
+
+    <div class="thank-you">
+      <h3>🎉 Thank you for reaching out!</h3>
+      <p>I’ve received your message and will get back to you soon. Keep growing and stay inspired!</p>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 John's Life Guide | Share. Inspire. Grow.
+  </footer>
+</body>
+</html>
